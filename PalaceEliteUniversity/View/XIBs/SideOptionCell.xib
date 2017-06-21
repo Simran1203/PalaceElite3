@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="SideOptionCell" id="3id-Gg-739" customClass="SideOptionCell" customModule="PalaceEliteUniversity" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="120" height="36"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3id-Gg-739" id="DQ6-w6-HrR">
+                <rect key="frame" x="0.0" y="0.0" width="120" height="35.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WDW-xO-yqr">
+                        <rect key="frame" x="0.0" y="12" width="120" height="12"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yD7-yU-75p">
+                        <rect key="frame" x="0.0" y="35" width="120" height="1"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="WDW-xO-yqr" firstAttribute="centerX" secondItem="DQ6-w6-HrR" secondAttribute="centerX" id="5of-3l-vpJ"/>
+                    <constraint firstAttribute="bottom" secondItem="yD7-yU-75p" secondAttribute="bottom" id="6so-7Q-kAF"/>
+                    <constraint firstItem="WDW-xO-yqr" firstAttribute="width" secondItem="DQ6-w6-HrR" secondAttribute="width" id="9gy-cg-0l5"/>
+                    <constraint firstItem="yD7-yU-75p" firstAttribute="centerX" secondItem="DQ6-w6-HrR" secondAttribute="centerX" id="NXA-qR-Lsn"/>
+                    <constraint firstItem="WDW-xO-yqr" firstAttribute="centerY" secondItem="DQ6-w6-HrR" secondAttribute="centerY" id="R09-2G-osd"/>
+                    <constraint firstItem="WDW-xO-yqr" firstAttribute="height" secondItem="DQ6-w6-HrR" secondAttribute="height" multiplier="12:35" id="UdV-ct-lh1"/>
+                    <constraint firstItem="yD7-yU-75p" firstAttribute="height" secondItem="DQ6-w6-HrR" secondAttribute="height" multiplier="1:36" id="gIQ-Zv-u3J"/>
+                    <constraint firstItem="yD7-yU-75p" firstAttribute="width" secondItem="DQ6-w6-HrR" secondAttribute="width" id="lag-si-AqR"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <inset key="separatorInset" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="lblCell" destination="WDW-xO-yqr" id="yfE-wG-bln"/>
+            </connections>
+            <point key="canvasLocation" x="-3" y="-173"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="2Dg-Xe-nL3" customClass="SideOptionsPopUp" customModule="PalaceEliteUniversity" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wZP-NW-CzB">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Upb-Sw-IIw">
+                    <rect key="frame" x="155" y="56" width="120" height="124"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="47t-UF-GVO">
+                            <rect key="frame" x="0.0" y="8" width="120" height="116"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="47t-UF-GVO" secondAttribute="trailing" id="4gL-98-dAD"/>
+                        <constraint firstItem="47t-UF-GVO" firstAttribute="leading" secondItem="Upb-Sw-IIw" secondAttribute="leading" id="NK0-cL-26g"/>
+                        <constraint firstItem="47t-UF-GVO" firstAttribute="top" secondItem="Upb-Sw-IIw" secondAttribute="top" constant="8" id="cpg-Ny-67X"/>
+                        <constraint firstAttribute="bottom" secondItem="47t-UF-GVO" secondAttribute="bottom" id="sJE-5T-Zja"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Upb-Sw-IIw" firstAttribute="height" secondItem="2Dg-Xe-nL3" secondAttribute="height" multiplier="128:568" constant="-4" id="4SU-Zc-RLr"/>
+                <constraint firstItem="wZP-NW-CzB" firstAttribute="top" secondItem="2Dg-Xe-nL3" secondAttribute="top" id="711-kr-VHT"/>
+                <constraint firstItem="Upb-Sw-IIw" firstAttribute="width" secondItem="2Dg-Xe-nL3" secondAttribute="width" multiplier="120:320" id="Fo1-xN-pRO"/>
+                <constraint firstAttribute="trailing" secondItem="wZP-NW-CzB" secondAttribute="trailing" id="GYd-JA-td6"/>
+                <constraint firstAttribute="bottom" secondItem="wZP-NW-CzB" secondAttribute="bottom" id="ZFp-oo-1It"/>
+                <constraint firstItem="Upb-Sw-IIw" firstAttribute="top" secondItem="2Dg-Xe-nL3" secondAttribute="top" constant="56" id="uJk-vf-xTa"/>
+                <constraint firstItem="Upb-Sw-IIw" firstAttribute="trailing" secondItem="2Dg-Xe-nL3" secondAttribute="trailing" multiplier="275:320" id="vzE-Vf-TJ3"/>
+                <constraint firstItem="wZP-NW-CzB" firstAttribute="leading" secondItem="2Dg-Xe-nL3" secondAttribute="leading" id="wrn-bn-52I"/>
+            </constraints>
+            <connections>
+                <outlet property="backgroundView" destination="wZP-NW-CzB" id="Bic-3Z-Q9N"/>
+                <outlet property="sideView" destination="Upb-Sw-IIw" id="ZeD-MS-Njq"/>
+                <outlet property="tableView" destination="47t-UF-GVO" id="RDz-Vh-DlF"/>
+            </connections>
+            <point key="canvasLocation" x="31" y="45"/>
+        </view>
+    </objects>
+</document>
